@@ -3,17 +3,91 @@
 <html>
 
 <head>
+
+<!--Materialize Icon Lib -->
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+
+	
 </head>
 
 <body>
-	<h1>HELLO WORLD</h1>
+	
+
+	<header> 
+    	<div class="row">
+    	<form class="col s12">
+     	 <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Add a task :)" id="first_name" type="text" class="validate">
+        </div>
+     
+    	<div id="plusButt">
+          <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+         </div>
+
+
+
+	</header>
+
+
+	<ul class="todo" id="remainingT">
+		
+
+		<li> 
+		    
+			Press the trashcan icon to reset your list
+			
+
+			<div class="goodButtons">
+	
+				<button class="remove">
+				 	<i class="material-icons">delete</i>
+				 	</button>
+
+				<button class="complete">
+					<i class="material-icons">stars</i>
+					</button>
+			</div>
+
+		</li>
+	</ul>
+
+	
+
+	<ul class="todo" id="completed">
+	<p> <b> Completed Tasks</b></p>
+		
+		<li> 
+		  
+
+		</li>
+	</ul>
+
+
+
+
+
+
 	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<<<<<<< Updated upstream
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+=======
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+>>>>>>> Stashed changes
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
