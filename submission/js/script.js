@@ -1,28 +1,27 @@
 
 
- $( "#plusButt" ).click(function() {
+$( "#plusButt" ).click(function() {
   	
 
     var Urinput = $(first_name).val();
 
-  if(Urinput!=null) {
+  	if(Urinput!=null) {
 
-  	addItemTodo(Urinput);
-  }
+  		addItemTodo(Urinput);
+}
  
 
 });
 
 
- function removeItem(){
+function removeItem(){
 
  	console.log(event);
 
-  var item = this.parentNode.parentNode;
-  var parent = item.parentNode;
+  	var item = this.parentNode.parentNode;
+  	var parent = item.parentNode;
   
-
-  parent.removeChild(item);
+  	parent.removeChild(item);
 }
 
 
@@ -42,9 +41,7 @@ function addItemTodo(text){
 		remove.classList.add('remove');
 		remove.innerHTML='<i class="material-icons">delete</i>';
 
-		//add click event for removing item
-
-		remove.addEventListener('click', removeItem);
+		
 
 		var complete= document.createElement('button');
 		complete.classList.add('complete');
@@ -52,9 +49,14 @@ function addItemTodo(text){
 
 		goodButtons.appendChild(remove);
 		goodButtons.appendChild(complete);
+		//one first-name is the ID of the li and the other 
+		//first-name represents the variable storing input 
 		first_name.appendChild(goodButtons);
-
 		list.appendChild(first_name);
+
+		//add click event for removing item
+
+		remove.addEventListener('click', removeItem);
 	
 	}
 
